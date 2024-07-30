@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="vbox" alignment="TOP_CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.contactmanagementsystem.HelloController">
+   <children>
+       <TableView fx:id="tableView" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="500.0">
+           <columns>
+               <TableColumn fx:id="SrNo" maxWidth="1.7976931348623157E308" minWidth="50.0" prefWidth="50.0" text="#" visible="false" />
+               <TableColumn fx:id="NameColumn" maxWidth="1.7976931348623157E308" minWidth="150.0" prefWidth="150.0" text="Name" />
+               <TableColumn fx:id="PhoneColumn" maxWidth="1.7976931348623157E308" minWidth="150.0" prefWidth="150.0" text="Phone Number" />
+            <TableColumn fx:id="EmailColumn" maxWidth="1.7976931348623157E308" minWidth="150.0" prefWidth="197.33331298828125" text="Email" />
+           </columns>
+       </TableView>
+      <HBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="400.0" spacing="30.0">
+         <children>
+            <Button focusTraversable="false" mnemonicParsing="false" onAction="#Insert" text="Add Contact">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button focusTraversable="false" mnemonicParsing="false" onAction="#Edit" text="Edit Contact">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button focusTraversable="false" mnemonicParsing="false" onAction="#delete" text="Delete Contact">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>
